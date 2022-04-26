@@ -1,0 +1,602 @@
+[
+	{
+		"codigo": 859322,
+		"name": "Miriam David",
+		"curso": "Farmácia,",
+		"email": "integer@sou.unaerpbr"
+	},
+	{
+		"codigo": 595130,
+		"name": "Tallulah Ray",
+		"curso": "Direito,",
+		"email": "vivamus.molestie@sou.unaerpbr"
+	},
+	{
+		"codigo": 672715,
+		"name": "Jakeem Mcgee",
+		"curso": "Nutrição,",
+		"email": "adipiscing.lobortis.risus@sou.unaerpbr"
+	},
+	{
+		"codigo": 481087,
+		"name": "Channing Chandler",
+		"curso": "Farmácia,",
+		"email": "commodo.ipsum@sou.unaerpbr"
+	},
+	{
+		"codigo": 727556,
+		"name": "Barrett Kidd",
+		"curso": "Medicina,",
+		"email": "a.neque.nullam@sou.unaerpbr"
+	},
+	{
+		"codigo": 757746,
+		"name": "Solomon Parker",
+		"curso": "Medicina,",
+		"email": "orci.luctus@sou.unaerpbr"
+	},
+	{
+		"codigo": 418732,
+		"name": "Finn Hodges",
+		"curso": "Engenharia de Software,",
+		"email": "sapien.gravida@sou.unaerpbr"
+	},
+	{
+		"codigo": 645871,
+		"name": "Reece Albert",
+		"curso": "Engenharia Química,",
+		"email": "nibh@sou.unaerpbr"
+	},
+	{
+		"codigo": 514958,
+		"name": "Elijah Parker",
+		"curso": "Farmácia,",
+		"email": "et@sou.unaerpbr"
+	},
+	{
+		"codigo": 945622,
+		"name": "Naida Hubbard",
+		"curso": "Engenharia Química,",
+		"email": "duis.a.mi@sou.unaerpbr"
+	},
+	{
+		"codigo": 450835,
+		"name": "Holly Benton",
+		"curso": "Engenharia da Computação,",
+		"email": "mi.lacinia@sou.unaerpbr"
+	},
+	{
+		"codigo": 646502,
+		"name": "Selma Witt",
+		"curso": "Engenharia Química,",
+		"email": "non.nisi@sou.unaerpbr"
+	},
+	{
+		"codigo": 180561,
+		"name": "Amir Buck",
+		"curso": "Engenharia da Computação,",
+		"email": "sit.amet@sou.unaerpbr"
+	},
+	{
+		"codigo": 523580,
+		"name": "Gil Stephenson",
+		"curso": "Engenharia de Software,",
+		"email": "lorem.vehicula@sou.unaerpbr"
+	},
+	{
+		"codigo": 904939,
+		"name": "Rowan Randolph",
+		"curso": "Engenharia Química,",
+		"email": "metus@sou.unaerpbr"
+	},
+	{
+		"codigo": 432777,
+		"name": "Megan Barton",
+		"curso": "Engenharia de Software,",
+		"email": "lacus.mauris@sou.unaerpbr"
+	},
+	{
+		"codigo": 158031,
+		"name": "Colt Hughes",
+		"curso": "Nutrição,",
+		"email": "turpis.non@sou.unaerpbr"
+	},
+	{
+		"codigo": 799009,
+		"name": "Meghan Cooley",
+		"curso": "Medicina,",
+		"email": "mollis@sou.unaerpbr"
+	},
+	{
+		"codigo": 307089,
+		"name": "Hillary Solis",
+		"curso": "Medicina,",
+		"email": "dis@sou.unaerpbr"
+	},
+	{
+		"codigo": 748198,
+		"name": "Octavia Mcguire",
+		"curso": "Farmácia,",
+		"email": "mauris.ipsum@sou.unaerpbr"
+	},
+	{
+		"codigo": 207134,
+		"name": "James Conway",
+		"curso": "Farmácia,",
+		"email": "arcu.morbi@sou.unaerpbr"
+	},
+	{
+		"codigo": 244167,
+		"name": "Kiayada Bright",
+		"curso": "Farmácia,",
+		"email": "id.ante@sou.unaerpbr"
+	},
+	{
+		"codigo": 100514,
+		"name": "Amy Hampton",
+		"curso": "Engenharia Química,",
+		"email": "in.molestie@sou.unaerpbr"
+	},
+	{
+		"codigo": 136015,
+		"name": "Hillary James",
+		"curso": "Medicina,",
+		"email": "justo.sit@sou.unaerpbr"
+	},
+	{
+		"codigo": 334567,
+		"name": "Silas Wagner",
+		"curso": "Nutrição,",
+		"email": "curabitur.consequat.lectus@sou.unaerpbr"
+	},
+	{
+		"codigo": 881356,
+		"name": "Zane Simpson",
+		"curso": "Nutrição,",
+		"email": "viverra.maecenas@sou.unaerpbr"
+	},
+	{
+		"codigo": 174488,
+		"name": "Hoyt Sparks",
+		"curso": "Engenharia de Software,",
+		"email": "nam.nulla@sou.unaerpbr"
+	},
+	{
+		"codigo": 678509,
+		"name": "Wallace Goff",
+		"curso": "Direito,",
+		"email": "hendrerit.id@sou.unaerpbr"
+	},
+	{
+		"codigo": 838684,
+		"name": "Kiara Fitzgerald",
+		"curso": "Medicina,",
+		"email": "nibh.sit@sou.unaerpbr"
+	},
+	{
+		"codigo": 739491,
+		"name": "Solomon Terrell",
+		"curso": "Farmácia,",
+		"email": "consectetuer@sou.unaerpbr"
+	},
+	{
+		"codigo": 948210,
+		"name": "Geoffrey Gentry",
+		"curso": "Engenharia Química,",
+		"email": "a@sou.unaerpbr"
+	},
+	{
+		"codigo": 580166,
+		"name": "Sylvia Chandler",
+		"curso": "Direito,",
+		"email": "ac.mattis@sou.unaerpbr"
+	},
+	{
+		"codigo": 155326,
+		"name": "Leonard Davis",
+		"curso": "Farmácia,",
+		"email": "proin.mi.aliquam@sou.unaerpbr"
+	},
+	{
+		"codigo": 163550,
+		"name": "Leonard Lewis",
+		"curso": "Engenharia de Software,",
+		"email": "orci.luctus@sou.unaerpbr"
+	},
+	{
+		"codigo": 271688,
+		"name": "Kieran Thomas",
+		"curso": "Nutrição,",
+		"email": "netus@sou.unaerpbr"
+	},
+	{
+		"codigo": 626478,
+		"name": "Chancellor Mccullough",
+		"curso": "Engenharia Química,",
+		"email": "arcu@sou.unaerpbr"
+	},
+	{
+		"codigo": 195462,
+		"name": "Zelda West",
+		"curso": "Direito,",
+		"email": "ullamcorper.eu@sou.unaerpbr"
+	},
+	{
+		"codigo": 849807,
+		"name": "Lee Tucker",
+		"curso": "Engenharia Química,",
+		"email": "cras.dictum@sou.unaerpbr"
+	},
+	{
+		"codigo": 160738,
+		"name": "Danielle Sparks",
+		"curso": "Medicina,",
+		"email": "varius.orci.in@sou.unaerpbr"
+	},
+	{
+		"codigo": 986284,
+		"name": "Kennedy Shannon",
+		"curso": "Engenharia de Software,",
+		"email": "vulputate@sou.unaerpbr"
+	},
+	{
+		"codigo": 953531,
+		"name": "Rhiannon Kennedy",
+		"curso": "Farmácia,",
+		"email": "arcu.vestibulum.ante@sou.unaerpbr"
+	},
+	{
+		"codigo": 586399,
+		"name": "Ignacia Park",
+		"curso": "Direito,",
+		"email": "sapien.aenean@sou.unaerpbr"
+	},
+	{
+		"codigo": 567757,
+		"name": "Vaughan Hardy",
+		"curso": "Engenharia Química,",
+		"email": "commodo.hendrerit.donec@sou.unaerpbr"
+	},
+	{
+		"codigo": 448412,
+		"name": "Ingrid Shields",
+		"curso": "Engenharia de Software,",
+		"email": "risus@sou.unaerpbr"
+	},
+	{
+		"codigo": 446136,
+		"name": "Leroy Estes",
+		"curso": "Engenharia da Computação,",
+		"email": "vulputate.risus.a@sou.unaerpbr"
+	},
+	{
+		"codigo": 657582,
+		"name": "Hall Fox",
+		"curso": "Medicina,",
+		"email": "a@sou.unaerpbr"
+	},
+	{
+		"codigo": 908256,
+		"name": "Vernon Wilder",
+		"curso": "Engenharia Química,",
+		"email": "cras@sou.unaerpbr"
+	},
+	{
+		"codigo": 824111,
+		"name": "Jakeem Owens",
+		"curso": "Farmácia,",
+		"email": "ullamcorper.eu@sou.unaerpbr"
+	},
+	{
+		"codigo": 605435,
+		"name": "Philip Duffy",
+		"curso": "Nutrição,",
+		"email": "tempor@sou.unaerpbr"
+	},
+	{
+		"codigo": 431585,
+		"name": "Mari Velez",
+		"curso": "Direito,",
+		"email": "senectus.et.netus@sou.unaerpbr"
+	},
+	{
+		"codigo": 569539,
+		"name": "Delilah Cobb",
+		"curso": "Nutrição,",
+		"email": "lacinia.orci@sou.unaerpbr"
+	},
+	{
+		"codigo": 336156,
+		"name": "Jessica Craig",
+		"curso": "Engenharia Química,",
+		"email": "et.magnis@sou.unaerpbr"
+	},
+	{
+		"codigo": 337604,
+		"name": "Philip Stein",
+		"curso": "Medicina,",
+		"email": "cursus.a@sou.unaerpbr"
+	},
+	{
+		"codigo": 796275,
+		"name": "Jennifer Benjamin",
+		"curso": "Medicina,",
+		"email": "eget@sou.unaerpbr"
+	},
+	{
+		"codigo": 692086,
+		"name": "Kameko Spencer",
+		"curso": "Medicina,",
+		"email": "aenean@sou.unaerpbr"
+	},
+	{
+		"codigo": 683407,
+		"name": "Adrienne Finley",
+		"curso": "Engenharia Química,",
+		"email": "vitae.semper.egestas@sou.unaerpbr"
+	},
+	{
+		"codigo": 700260,
+		"name": "Deirdre Underwood",
+		"curso": "Direito,",
+		"email": "pede.praesent@sou.unaerpbr"
+	},
+	{
+		"codigo": 590313,
+		"name": "Aimee Cummings",
+		"curso": "Medicina,",
+		"email": "amet@sou.unaerpbr"
+	},
+	{
+		"codigo": 841979,
+		"name": "Tyler Newman",
+		"curso": "Engenharia da Computação,",
+		"email": "purus.sapien@sou.unaerpbr"
+	},
+	{
+		"codigo": 667671,
+		"name": "Moses Mccarthy",
+		"curso": "Engenharia da Computação,",
+		"email": "magna.sed@sou.unaerpbr"
+	},
+	{
+		"codigo": 957118,
+		"name": "Geraldine Stevenson",
+		"curso": "Medicina,",
+		"email": "phasellus.at@sou.unaerpbr"
+	},
+	{
+		"codigo": 142507,
+		"name": "September Christian",
+		"curso": "Medicina,",
+		"email": "eget.dictum.placerat@sou.unaerpbr"
+	},
+	{
+		"codigo": 266645,
+		"name": "Eaton Wolf",
+		"curso": "Direito,",
+		"email": "in.faucibus@sou.unaerpbr"
+	},
+	{
+		"codigo": 350197,
+		"name": "Lee Mendoza",
+		"curso": "Engenharia da Computação,",
+		"email": "eget.tincidunt.dui@sou.unaerpbr"
+	},
+	{
+		"codigo": 912938,
+		"name": "Kermit Wynn",
+		"curso": "Medicina,",
+		"email": "vehicula.pellentesque.tincidunt@sou.unaerpbr"
+	},
+	{
+		"codigo": 228993,
+		"name": "Price Bolton",
+		"curso": "Nutrição,",
+		"email": "fusce@sou.unaerpbr"
+	},
+	{
+		"codigo": 423965,
+		"name": "Stone Levine",
+		"curso": "Medicina,",
+		"email": "feugiat.lorem.ipsum@sou.unaerpbr"
+	},
+	{
+		"codigo": 867955,
+		"name": "Tatyana Shaffer",
+		"curso": "Medicina,",
+		"email": "curabitur.egestas@sou.unaerpbr"
+	},
+	{
+		"codigo": 817337,
+		"name": "Tiger Hopper",
+		"curso": "Direito,",
+		"email": "ac.facilisis.facilisis@sou.unaerpbr"
+	},
+	{
+		"codigo": 799669,
+		"name": "Alexandra Cash",
+		"curso": "Engenharia Química,",
+		"email": "ipsum.primis.in@sou.unaerpbr"
+	},
+	{
+		"codigo": 601225,
+		"name": "Justin Glass",
+		"curso": "Nutrição,",
+		"email": "turpis.in@sou.unaerpbr"
+	},
+	{
+		"codigo": 476444,
+		"name": "Zane Rodgers",
+		"curso": "Farmácia,",
+		"email": "eget@sou.unaerpbr"
+	},
+	{
+		"codigo": 803491,
+		"name": "Juliet Garcia",
+		"curso": "Engenharia Química,",
+		"email": "arcu.vel@sou.unaerpbr"
+	},
+	{
+		"codigo": 671860,
+		"name": "Aaron David",
+		"curso": "Nutrição,",
+		"email": "duis@sou.unaerpbr"
+	},
+	{
+		"codigo": 458697,
+		"name": "Colette Holder",
+		"curso": "Medicina,",
+		"email": "penatibus.et@sou.unaerpbr"
+	},
+	{
+		"codigo": 720658,
+		"name": "Vincent Hester",
+		"curso": "Farmácia,",
+		"email": "dapibus.gravida.aliquam@sou.unaerpbr"
+	},
+	{
+		"codigo": 672477,
+		"name": "Dahlia Kelley",
+		"curso": "Farmácia,",
+		"email": "enim@sou.unaerpbr"
+	},
+	{
+		"codigo": 413240,
+		"name": "Axel Lindsay",
+		"curso": "Nutrição,",
+		"email": "sagittis.placerat@sou.unaerpbr"
+	},
+	{
+		"codigo": 879317,
+		"name": "Hyacinth Hill",
+		"curso": "Medicina,",
+		"email": "vel.arcu@sou.unaerpbr"
+	},
+	{
+		"codigo": 460551,
+		"name": "Quin Lancaster",
+		"curso": "Medicina,",
+		"email": "pellentesque.sed@sou.unaerpbr"
+	},
+	{
+		"codigo": 502016,
+		"name": "Kasimir Holloway",
+		"curso": "Medicina,",
+		"email": "est.nunc.ullamcorper@sou.unaerpbr"
+	},
+	{
+		"codigo": 978559,
+		"name": "Hedley Rocha",
+		"curso": "Nutrição,",
+		"email": "eu.nulla@sou.unaerpbr"
+	},
+	{
+		"codigo": 766577,
+		"name": "Iris Joyce",
+		"curso": "Medicina,",
+		"email": "lorem.eget@sou.unaerpbr"
+	},
+	{
+		"codigo": 675489,
+		"name": "Stacy Barry",
+		"curso": "Farmácia,",
+		"email": "arcu@sou.unaerpbr"
+	},
+	{
+		"codigo": 253606,
+		"name": "Hedda Fisher",
+		"curso": "Farmácia,",
+		"email": "sociis@sou.unaerpbr"
+	},
+	{
+		"codigo": 963071,
+		"name": "Melyssa Richmond",
+		"curso": "Direito,",
+		"email": "magna@sou.unaerpbr"
+	},
+	{
+		"codigo": 368954,
+		"name": "Octavius Mendoza",
+		"curso": "Farmácia,",
+		"email": "adipiscing@sou.unaerpbr"
+	},
+	{
+		"codigo": 789684,
+		"name": "Aline Holder",
+		"curso": "Direito,",
+		"email": "auctor.vitae.aliquet@sou.unaerpbr"
+	},
+	{
+		"codigo": 968693,
+		"name": "Georgia Garza",
+		"curso": "Farmácia,",
+		"email": "ut.aliquam@sou.unaerpbr"
+	},
+	{
+		"codigo": 647213,
+		"name": "Shelly Suarez",
+		"curso": "Engenharia da Computação,",
+		"email": "enim@sou.unaerpbr"
+	},
+	{
+		"codigo": 520148,
+		"name": "Tatiana Price",
+		"curso": "Direito,",
+		"email": "aliquam@sou.unaerpbr"
+	},
+	{
+		"codigo": 703772,
+		"name": "Jordan Roach",
+		"curso": "Nutrição,",
+		"email": "tristique.pharetra@sou.unaerpbr"
+	},
+	{
+		"codigo": 390255,
+		"name": "Kyla Holmes",
+		"curso": "Engenharia da Computação,",
+		"email": "lectus.rutrum.urna@sou.unaerpbr"
+	},
+	{
+		"codigo": 928088,
+		"name": "Amery Atkins",
+		"curso": "Nutrição,",
+		"email": "at.lacus@sou.unaerpbr"
+	},
+	{
+		"codigo": 970496,
+		"name": "Lyle Cohen",
+		"curso": "Engenharia da Computação,",
+		"email": "eget.lacus@sou.unaerpbr"
+	},
+	{
+		"codigo": 177876,
+		"name": "Jade Rosario",
+		"curso": "Medicina,",
+		"email": "eu@sou.unaerpbr"
+	},
+	{
+		"codigo": 347399,
+		"name": "Hamilton Daniels",
+		"curso": "Medicina,",
+		"email": "fringilla.ornare@sou.unaerpbr"
+	},
+	{
+		"codigo": 424282,
+		"name": "Lilah Stanley",
+		"curso": "Farmácia,",
+		"email": "ornare.lectus.ante@sou.unaerpbr"
+	},
+	{
+		"codigo": 697882,
+		"name": "Jenette Willis",
+		"curso": "Nutrição,",
+		"email": "habitant.morbi.tristique@sou.unaerpbr"
+	},
+	{
+		"codigo": 408603,
+		"name": "Colin Goodwin",
+		"curso": "Engenharia Química,",
+		"email": "mollis.nec@sou.unaerpbr"
+	}
+]
