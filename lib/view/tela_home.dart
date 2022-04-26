@@ -1,4 +1,6 @@
+import 'package:app_parcial/view/sobre.dart';
 import 'package:flutter/material.dart';
+
 
 class TelaHome extends StatefulWidget {
   const TelaHome({ Key? key }) : super(key: key);
@@ -22,7 +24,7 @@ var form = GlobalKey<FormState>();
         centerTitle: true,
         backgroundColor: Colors.grey.shade900, actions: [
             IconButton(onPressed: () {
-            caixaDialogoSobre('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi turpis erat, feugiat et sagittis sed, accumsan congue massa. Phasellus lacus erat, placerat sed pellentesque eget, sodales et quam. Etiam vel arcu eleifend, ultricies arcu vitae, iaculis orci. Nullam sed interdum est. Sed aliquet rutrum convallis. Donec efficitur nibh ut sem feugiat, vitae auctor velit molestie. Vivamus sed dictum neque, eget ornare lectus. Duis ornare, justo nec finibus cursus, dolor lorem scelerisque magna, vel consequat elit leo in mauris. Sed imperdiet justo in augue viverra laoreet. Maecenas convallis volutpat eros, id facilisis tellus euismod vitae. Etiam rutrum massa sit amet neque efficitur pellentesque. Vestibulum orci eros, euismod sed semper nec, feugiat sed metus. Ut tempus dignissim cursus. Ut non justo urna.');  
+            caixaDialogoSobre('Tema do App: Controle e cadastro de alunos no banco de dados\nObjetivo: Criar um aplicativo para poder fazer o cadastro de alunos no banco de dados para acessar a rede wifi\nSamuel Arantes Gonzales');  
             }, icon: const Icon(Icons.info_outline))//question_mark_rounded
           ],
         //------------------//
@@ -46,13 +48,13 @@ var form = GlobalKey<FormState>();
                   const SizedBox(height: 60),
                   botao1('Consulta de Alunos'),
                   const SizedBox(height: 30),
-                  botao2('-X-'),
+                  botao2('Cadastro de Alunos'),
                   const SizedBox(height: 30),
-                  botao3('-X-'),
+                  botao3('Cadastro de Professores'),
                   const SizedBox(height: 30),
-                  botao2('-X-'),
+                  botao2('Reservas'),
                   const SizedBox(height: 30),
-                  botao3('-X-'),
+                  botao3('Ramais'),
                   const SizedBox(height: 30),                  
                   //botaoS('?'),//sobre
                 ],
@@ -65,7 +67,7 @@ var form = GlobalKey<FormState>();
    }
   //-----------------------------------
   botao1(rotulo) {
-  return SizedBox(width: 170,height: 40,
+  return SizedBox(width: 190,height: 45,
 
       child: ElevatedButton(//TextButton
         onPressed: () {
@@ -79,7 +81,7 @@ var form = GlobalKey<FormState>();
   }
   //----------------------------------
   botao2(rotulo) {
-  return SizedBox(width: 170,height: 40,
+  return SizedBox(width: 190,height: 45,
     
       child: ElevatedButton(//TextButton
         onPressed: () {
@@ -93,7 +95,7 @@ var form = GlobalKey<FormState>();
   }
   //---------------------------------
   botao3(rotulo) {
-  return SizedBox(width: 170,height: 40,
+  return SizedBox(width: 190,height: 45,
 
       child: ElevatedButton(//TextButton
         onPressed: () {
@@ -101,7 +103,7 @@ var form = GlobalKey<FormState>();
 
         },
         //aparência
-        child: Text(rotulo,style: const TextStyle(fontSize: 14),),style: ElevatedButton.styleFrom(primary: Colors.grey.shade900,),
+        child: Text(rotulo, style: const TextStyle(fontSize: 14),),style: ElevatedButton.styleFrom(primary: Colors.grey.shade900,),
       ),
     );
   }
@@ -110,22 +112,9 @@ var form = GlobalKey<FormState>();
   caixaDialogoSobre(msg) {
     return showDialog(
       context: context,
+      
       builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Sobre'),//centerTitle: true,
-          
-          content: Text(
-            msg,
-            style: const TextStyle(fontSize: 24),
-          ),
-          actions: [
-            TextButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                child: const Text('fechar')),
-          ],
-        );
+      return Sobre(text: msg);
       },
     );
   }

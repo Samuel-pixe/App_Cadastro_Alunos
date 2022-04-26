@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:app_parcial/view/sobre.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:app_parcial/view/widget_foto.dart';
@@ -59,9 +60,9 @@ class _TelaLoginState extends State<TelaLogin> {
                     color: Colors.grey.shade900,
                   ),
                   const SizedBox(height: 80),
-                  campoTexto('E-mail', txtEmail,false),
+                  campoTexto('E-mail', txtEmail,false,"email.exemplo@gmail.com"),
                   const SizedBox(height: 10),
-                  campoTexto('Senha', txtSenha,true),
+                  campoTexto('Senha', txtSenha,true,"********"),
                   const SizedBox(height: 80),
                   botao('entrar'),
                   const SizedBox(height: 120),
@@ -81,7 +82,7 @@ class _TelaLoginState extends State<TelaLogin> {
 
   //-------------------CAMPO DE TEXTO---------------//
   
-  campoTexto(rotulo, variavel, senha) {
+  campoTexto(rotulo, variavel, senha, dica) {
     return TextFormField(
       //Associar a variável de controle
       controller: variavel,style: TextStyle(fontSize: 22,color: Colors.grey.shade900,),
@@ -90,7 +91,7 @@ class _TelaLoginState extends State<TelaLogin> {
       obscureText: senha,//Senha
       //maxLength: 100,//Quant. máxima de caracteres
 
-      decoration: InputDecoration(labelText: rotulo,labelStyle: TextStyle(fontSize: 24,color: Colors.grey.shade600,),hintText: '',hintStyle: TextStyle(fontSize: 18,color: Colors.grey.shade400,),border: OutlineInputBorder(borderRadius: BorderRadius.circular(15),),),
+      decoration: InputDecoration(labelText: rotulo,labelStyle: TextStyle(fontSize: 24,color: Colors.grey.shade600,),hintText: dica,hintStyle: TextStyle(fontSize: 18,color: Colors.grey.shade400,),border: OutlineInputBorder(borderRadius: BorderRadius.circular(15),),),
       
       //--------- Validação da entrada do usuário----------//
       
@@ -222,27 +223,7 @@ botaoC(rotulo) {
       context: context,
       
       builder: (BuildContext context) {
-        
-        return AlertDialog(
-          
-          title: const Text('Sobre'),//centerTitle: true,
-          
-          content: Text(
-            
-            msg,
-            style: const TextStyle(fontSize: 24),
-          ),
-          actions: [
-            Image.network('assets/lib/imagens/foto.jpg',scale:1.8,),
-            //Image.network('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-            //Image.asset(imagem),
-            TextButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                child: const Text('fechar')),
-          ],
-        );
+      return Sobre(text: msg);
       },
     );
   }
