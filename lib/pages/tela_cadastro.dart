@@ -1,5 +1,13 @@
-import 'package:app_parcial/view/sobre.dart';
+//import 'dart:html';
+
+import 'package:app_parcial/pages/widgets/sobre.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'widgets/mensagem.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:brasil_fields/brasil_fields.dart';
+
 
 class TelaCadastro extends StatefulWidget {
   const TelaCadastro({ Key? key }) : super(key: key);
@@ -10,13 +18,15 @@ class TelaCadastro extends StatefulWidget {
 
 class _TelaCadastroState extends State<TelaCadastro> {
 
-  var txtDDD = TextEditingController(); 
+  //var txtDDD = TextEditingController(); 
   var txtNome = TextEditingController(); 
   var txtEmail = TextEditingController();
   var txtSenha = TextEditingController(); 
   var txtSenha1 = TextEditingController();
   var txtTelefone = TextEditingController();
-  var txtSobrenome = TextEditingController();
+  var txtCpf = TextEditingController();
+  
+  
 
   var form = GlobalKey<FormState>();
 
@@ -41,21 +51,22 @@ Widget build(BuildContext context) {
             child: Form(
               key: form,
                 child: Column(
-                  children: [//-------Caixas de Texto----//
+                  children: [
+                    //-------Caixas de Texto----//
                     const SizedBox(height: 10),
-                    campoTexto('E-mail', txtEmail,false),
+                    campoTexto('E-mail', txtEmail,Icons.email),
                     const SizedBox(height: 10),
-                    campoTexto('Nome', txtNome,false),
+                    campoTexto('Nome', txtNome,Icons.people),
                     const SizedBox(height: 10),
-                    campoTexto('Sobrenome', txtSobrenome,false),
+                    campoTexto('Telefone', txtTelefone,Icons.phone),           
                     const SizedBox(height: 10),
-                    campoTexto('DDD', txtDDD,false),
+                    campoTexto('CPF', txtCpf,Icons.document_scanner_outlined),
                     const SizedBox(height: 10),
-                    campoTexto('Telefone', txtTelefone,false),
+                    campoTexto('Senha', txtSenha, Icons.lock, senha: true),
+                    const SizedBox(height: 10),
+                    campoTexto('Senha', txtSenha1,Icons.lock, senha: true),
                     const SizedBox(height: 30),
-                    campoTexto('Senha', txtSenha, true),
-                    const SizedBox(height: 10),
-                    campoTexto('Senha', txtSenha1, true),
+                    
                     botao('cadastrar'),
                     ],
                   ),
@@ -67,16 +78,25 @@ Widget build(BuildContext context) {
 }
 
 
-campoTexto(rotulo, variavel,senha){
+campoTexto(rotulo, variavel,icone,{senha}){
   return TextFormField(
+      //inputFormatters: [],
       //Associar a variável de controle
       controller: variavel,style: TextStyle(fontSize: 22,color: Colors.grey.shade900,),
       keyboardType: TextInputType.text,//Teclado numérico
      
-      obscureText: senha,//Senha
-      maxLength: 100,//Quant. máxima de caracteres
+      obscureText: (senha==null)?false:true,//Senha
+      //maxLength: 100,//Quant. máxima de caracteres
 
-      decoration: InputDecoration(labelText: rotulo,labelStyle: TextStyle(fontSize: 14,color: Colors.grey.shade600,),hintText:'',hintStyle: TextStyle(fontSize: 14,color: Colors.grey.shade400,), border: OutlineInputBorder(borderRadius: BorderRadius.circular(5),),),//Border.all(width: 2.0),
+      decoration: InputDecoration(
+      prefixIcon: Icon(icone, color: Colors.grey.shade900),
+      prefixIconColor: Colors.grey.shade900,
+      labelText: rotulo,
+      labelStyle: TextStyle(fontSize: 14,color: Colors.grey.shade600,),
+      hintText:'',
+      hintStyle: TextStyle(fontSize: 14,color: Colors.grey.shade400,), 
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(5),),
+      ),
       
       //--------- Validação da entrada do usuário----------//
       
@@ -84,7 +104,7 @@ campoTexto(rotulo, variavel,senha){
         value = value!.replaceFirst(',', '.');
         //verificar se o usuário digitou um valor
         //numérico ->(double.tryParse(value) == null) 
-        if (value == null || value.isEmpty){
+        if (value.isEmpty){
           return 'Nenhum valor registrado';
         } else {
           return null;
@@ -102,7 +122,7 @@ botao(rotulo){
           //Validação dos campos do formulário
           if (form.currentState!.validate()) {
             setState(() {
-              //
+              
               String senha = (txtSenha.text.replaceFirst(',', '.'));
               String senha1 = (txtSenha1.text.replaceFirst(',', '.'));
               
@@ -112,7 +132,8 @@ botao(rotulo){
 
               }
               else{
-                Navigator.pushNamed(context, 't1');
+                criarConta(txtNome.text, txtEmail.text, txtTelefone.text,txtCpf.text, txtSenha.text);
+                Navigator.pushNamed(context, 'login');
                 ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   duration: const Duration(seconds: 3),
@@ -176,5 +197,35 @@ caixaDialogo(msg) {
     );
   }
 
+void criarConta(nome, email, telefone, cpf, senha) {
+    FirebaseAuth.instance
+        .createUserWithEmailAndPassword(email: email, password: senha)
+        .then((res) {
+      //Armazenar o nome completo no Firestore
+      //print('UID: ' + res.user!.uid.toString());
+      FirebaseFirestore.instance.collection('usuarios').add(
+        {
+          'uid': res.user!.uid.toString(),
+          'nome': nome,
+          'telefone': telefone,
+          'cpf': cpf,
+
+        },
+      );
+      sucesso(context, 'O usuário foi criado com sucesso!');
+      Navigator.pop(context);
+    }).catchError((e) {
+      switch (e.code) {
+        case 'email-already-in-use':
+          erro(context, 'O email já foi cadastrado.');
+          break;
+        case 'invalid-email':
+          erro(context, 'O formato do email é inválido.');
+          break;
+        default:
+          erro(context, e.code.toString());
+      }
+    });
+  }
 
 }

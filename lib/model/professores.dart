@@ -1,22 +1,22 @@
-class Alunos {
+class Professores {
   String id;
   String nome;
   //String curso;
   String email;
-  String codigo;
+  //String codigo;
   
 
-  Alunos(this.id, this.nome, this.email, this.codigo);
+  Professores(this.id, this.nome, this.email);
 
   //Transformar dados no formato JSON em um objeto
   //da classe Pais
-  factory Alunos.fromJson(String id,Map<String, dynamic> json) {
-    return Alunos(
+  factory Professores.fromJson(String id,Map<String, dynamic> json) {
+    return Professores(
         id,
         json["nome"],
         //json["curso"],
         json["email"],
-        json["codigo"]
+       // json["codigo"]
         );
   }
 }
